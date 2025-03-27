@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>
+<div>
+	<h1>SINGING TO SPEECH CONVERSION WITH GENERATIVE FLOW</h1>
+	<h4>Jiawen Huang, Emmanouil Benetos</h4>
+
+	<br>
+</div>
+<h3>Samples used in the subjective evaluation (dataset: NHSS)</h3>
+<table>
+  <tr>
+    <th></th>
+    <th>Singing</th>
+    <th>ALT-TTS</th>
+    <th>WORLD-nodur</th>
+    <th>WORLD-dur</th>
+    <th>M2-nodur</th>
+    <th>M2-dur</th>
+  </tr>
+
+  <tr>
+    <th>Sample 1</th>
+    <th><audio controls><source src="audio/orig/F01-S06-Song-Song_30.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/ALT-TTS/F01-S06-Song-Song_30-TTS.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/F01-S06-Song-Song_30-ns-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/F01-S06-Song-Song_30-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/F01-S06-Song-Song_30_no_dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/F01-S06-Song-Song_30_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Sample 2</th>
+    <th><audio controls><source src="audio/orig/F02-S18-Song-Song_11.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/ALT-TTS/F02-S18-Song-Song_11-TTS.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/F02-S18-Song-Song_11-ns-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/F02-S18-Song-Song_11-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/F02-S18-Song-Song_11_no_dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/F02-S18-Song-Song_11_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Sample 3</th>
+    <th><audio controls><source src="audio/orig/M01-S14-Song-Song_35.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/ALT-TTS/M01-S14-Song-Song_35-TTS.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/M01-S14-Song-Song_35-ns-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/M01-S14-Song-Song_35-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/M01-S14-Song-Song_35_no_dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/M01-S14-Song-Song_35_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Sample 4</th>
+    <th><audio controls><source src="audio/orig/M02-S06-Song-Song_34.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/ALT-TTS/M02-S06-Song-Song_34-TTS.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/M02-S06-Song-Song_34-ns-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/M02-S06-Song-Song_34-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/M02-S06-Song-Song_34_no_dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/M02-S06-Song-Song_34_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Sample 5</th>
+    <th><audio controls><source src="audio/orig/F04-S12-Song-Song_11.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/ALT-TTS/F04-S12-Song-Song_11-TTS.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/F04-S12-Song-Song_11-ns-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/F04-S12-Song-Song_11-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/F04-S12-Song-Song_11_no_dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/F04-S12-Song-Song_11_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Sample 6</th>
+    <th><audio controls><source src="audio/orig/F05-S08-Song-Song_8.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/ALT-TTS/F05-S08-Song-Song_8-TTS.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/F05-S08-Song-Song_8-ns-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/F05-S08-Song-Song_8-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/F05-S08-Song-Song_8_no_dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/F05-S08-Song-Song_8_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Sample 7</th>
+    <th><audio controls><source src="audio/orig/M03-S06-Song-Song_13.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/ALT-TTS/M03-S06-Song-Song_13-TTS.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/M03-S06-Song-Song_13-ns-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/M03-S06-Song-Song_13-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/M03-S06-Song-Song_13_no_dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/M03-S06-Song-Song_13_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Sample 8</th>
+    <th><audio controls><source src="audio/orig/M05-S07-Song-Song_25.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/ALT-TTS/M05-S07-Song-Song_25-TTS.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/M05-S07-Song-Song_25-ns-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/WORLD/M05-S07-Song-Song_25-WORLD.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/M05-S07-Song-Song_25_no_dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M2/M05-S07-Song-Song_25_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+</table>
+</br>
+<h3>Comparing M1 and M2 (dataset: DSing)</h3>
+We could not include both M1 and M2 in the subjective evaluation due to limited resources. M1 and M2 demonstrate different strengths in objective evaluation. Below are audio samples comparing M1 and M2, which illustrate our decision to exclude M1. </br>
+<table>
+  <tr>
+    <th></th>
+    <th>Singing</th>
+    <th>M1-nodur</th>
+    <th>M1-dur</th>
+    <th>M2-nodur</th>
+    <th>M2-dur</th>
+  </tr>
+
+  <tr>
+    <th>Sample 1</th>
+    <th><audio controls><source src="audio/M1M2/expect.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/expect-M1-nodur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/expect-M1-dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/expect-M2-nodur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/expect-M2-dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+
+  <tr>
+    <th>Sample 2</th>
+    <th><audio controls><source src="audio/M1M2/detroit.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/detroit-M1-nodur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/detroit-M1-dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/detroit-M2-nodur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/detroit-M2-dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+  <tr>
+    <th>Sample 3</th>
+    <th><audio controls><source src="audio/M1M2/goback.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/goback-M1-nodur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/goback-M1-dur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/goback-M2-nodur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/M1M2/goback-M2-dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+</table>
+</br>
+<h3>Inference on other languages (dataset: MIR-1k and PJS)</h3>
+This section showcases the potential of the proposed model when applied to unseen languages. It is not discussed in the paper. </br>
+<table>
+  <tr>
+    <th></th>
+    <th>Singing</th>
+    <th>M2-nodur</th>
+    <th>M2-dur</th>
+  </tr>
+
+  <tr>
+    <th>Mandarin sample</th>
+    <th><audio controls><source src="audio/multilingual/bici.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/multilingual/bici_nodur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/multilingual/bici_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+
+
+  <tr>
+    <th>Japanese sample</th>
+    <th><audio controls><source src="audio/multilingual/kasuka.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/multilingual/kasuka_nodur.wav" type="audio/mpeg"></audio></th>
+    <th><audio controls><source src="audio/multilingual/kasuka_dur.wav" type="audio/mpeg"></audio></th>
+  </tr>
+</table>
+
+</center>
+</body>
+</html>
